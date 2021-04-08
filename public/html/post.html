@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/post.js"></script>
+    <title>Post</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">POST POKEMON</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="namePokemon" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="namePokemon" name="namePokemon" placeholder="Nombre del Pokemon">
+            </div>
+            <div class="mb-3">
+                <label for="typePokemon" class="form-label">Tipo</label>
+                <input type="text" class="form-control" id="typePokemon" name="typePokemon" placeholder="Tipo del pokemon">
+            </div>
+            <button type="button" onclick="postPokemon()" class="btn btn-primary">Añadir</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/put.js"></script>
+    <title>Put</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">SEARCH AND PUT POKEMON</h1>
+        <form>
+            <div class="input-group mb-3">
+                <input id="idPokemonSearch" type="number" class="form-control" placeholder="Buscar pokemon por id" aria-describedby="button-addon2">
+                <button onclick="searchPokemon()" class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+            </div>
+        </form>
+
+
+        <form>
+            <div class="mb-3">
+                <label for="idPokemon" class="form-label">Id</label>
+                <input disabled type="text" class="form-control" id="idPokemon" name="idPokemon" placeholder="Id del Pokemon">
+            </div>
+            <div class="mb-3">
+                <label for="namePokemon" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="namePokemon" name="namePokemon" placeholder="Nombre del Pokemon">
+            </div>
+            <div class="mb-3">
+                <label for="typePokemon" class="form-label">Tipo</label>
+                <input type="text" class="form-control" id="typePokemon" name="typePokemon" placeholder="Tipo del pokemon">
+            </div>
+            <button onclick="putPokemon()" class="btn btn-primary">Actualizar</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
