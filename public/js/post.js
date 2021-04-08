@@ -5,7 +5,9 @@ const postPokemon = () => {
         type: document.getElementById("typePokemon").value
     };
 
-    const urlApi = `http://localhost:1010/api/pokemons`;
+    const URI_HEROKU = "https://dsg-pokeapi.herokuapp.com";
+    const urlApi = `${URI_HEROKU}/api/pokemons`;
+
 
     const options = {
         method: "POST",

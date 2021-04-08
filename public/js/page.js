@@ -1,6 +1,7 @@
 const getPokemonPage = (page = "1") => {
 
-    const urlApi = `http://localhost:1010/api/pokemons/page/${page}`;
+    const URI_HEROKU = "https://dsg-pokeapi.herokuapp.com";
+    const urlApi = `${URI_HEROKU}/api/pokemons/page/${page}`;
 
     fetch(urlApi).then((response) => {
         return response.json();

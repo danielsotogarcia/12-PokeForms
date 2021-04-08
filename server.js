@@ -29,6 +29,7 @@ app.post("/server/cookie", (request, response) => {
     });
 });
 
-app.listen(1012, () => {
-    console.log(`Servidor iniciado en el puerto: ${1012}`);
+const PORT = process.env.PORT || 1012;
+app.listen(PORT, () => {
+    console.log(`POKEFORM corriendo en puerto ${PORT}`);
 });
