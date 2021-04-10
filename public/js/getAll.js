@@ -1,6 +1,6 @@
 const getAll = () => {
 
-    const URI_HEROKU = "https://dsg-pokeapi.herokuapp.com";
+    const URI_HEROKU = "https://pokeapi-dsg.herokuapp.com";
     const urlApi = `${URI_HEROKU}/api/pokemons`;
 
     fetch(urlApi).then((response) => {
@@ -33,7 +33,7 @@ const cookies = () => {
         type: "type"
     };
 
-    const urlApi = `http://localhost:1010/api/cookie`;
+    const urlApi = `${URI_HEROKU}/api/cookie`;
 
     const options = {
         method: "POST",
