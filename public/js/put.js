@@ -1,6 +1,6 @@
 const searchPokemon = () => {
     const idPokemon = document.getElementById("idPokemonSearch").value;
-    const URI_HEROKU = "https://dsg-pokeapi.herokuapp.com";
+    const URI_HEROKU = "https://pokeapi-dsg.herokuapp.com/";
     const urlApi = `${URI_HEROKU}/api/onepokemon?id=${idPokemon}`;
 
     fetch(urlApi).then((response) => {
